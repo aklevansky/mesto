@@ -1,0 +1,36 @@
+.profile__btn-edit{
+    grid-area: edit;
+    margin-bottom: 12px;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    background: none;
+    background-image: url(../../../images/UI/btn-edit-pencil.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2px;
+    border: 1px solid white;
+    justify-self: start;
+    align-self: end;
+}
+
+@media screen and (max-width: 728px) {
+    .profile__btn-edit  {
+        width: 18px;
+        height: 18px;
+        margin: 0;
+        margin-left: 5px;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .profile__btn-edit  {
+        width: 18px;
+        height: 18px;
+        margin: 0;
+        align-self: center;
+        justify-self: start;
+    }
+}

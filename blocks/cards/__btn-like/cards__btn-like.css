@@ -1,0 +1,12 @@
+.cards__btn-like {
+    display: inline-block;
+    margin-right: 18px;
+    background-image: url(../../../images/UI/btn-like-heart.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20.76px;
+    width: 18.13px;
+    border: none;
+    background-color: white;
+    width: 9%;
+}
