@@ -5,7 +5,7 @@
     align-items: center;
     max-width: 100%;
     background-image: linear-gradient(to bottom, black, black 10%, white 10%, white 100%);
-    border-radius: 13px;
+    border-radius: 15px;
     color: black;
 
     /* white-space: nowrap;

@@ -11,3 +11,9 @@
     overflow: hidden;
     width: 69%;
 }
+
+@media screen and (max-width: 1024px) {
+    .cards__title {
+        width: 68%;
+    }
+}
