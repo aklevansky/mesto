@@ -12,11 +12,11 @@
     </header>
     <main class="content">
         <section class="profile">
-            <img src="./images/Profile/Jacques-Yves Cousteau.jpg" alt="Жак-Ив Кусто" class="profile__picture">
+            <img src="./images/Profile/Jacques-Yves_Cousteau.jpg" alt="Жак-Ив Кусто" class="profile__picture">
             <h1 class="profile__name">
                 Жак-Ив Кусто
             </h1>
-            <p class="profile__description">
+            <p class="profile__job">
                 Исследователь океана
             </p>
             <button class="page__button profile__btn-edit"></button>
@@ -58,8 +58,20 @@
         </section>
     </main>
     <footer class="footer">
-        <footer class="footer__copyright">&copy; 2020 Mesto Russia</footer>
+        <div class="footer__copyright">&copy; 2020 Mesto Russia</div>
     </footer>
+    <div class="popup">
+        <div class="popup__container">
+            <button class="popup__close page__button"></button>
+            <h2 class="popup__title">Редактировать профиль</h2>
+            <form name="profileEdit">
+                <input type="text" name="name" class="popup__input">
+                <input type="text" name="job" class="popup__input">
+                <input type="submit" class="popup__submit page__button">
+            </form>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
 
