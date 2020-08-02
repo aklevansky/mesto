@@ -5,7 +5,7 @@
 @import url(./__close/popup__close.css);
 
 .popup {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: none;

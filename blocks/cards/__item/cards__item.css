@@ -1,14 +1,11 @@
 .cards__item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     max-width: 100%;
-    background-image: linear-gradient(to bottom, black, black 10%, white 10%, white 100%);
-    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    grid-template-columns: 1fr 70px;
     color: black;
-
-    /* white-space: nowrap;
-    */
+    background-image: linear-gradient(to bottom, black, black 10%, white 10%, white 100%);
+    border-radius: 13px;
     overflow: hidden;
 }

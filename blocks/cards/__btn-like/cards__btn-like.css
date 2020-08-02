@@ -1,12 +1,17 @@
 .cards__btn-like {
-    display: inline-block;
-    margin-right: 18px;
+    grid-column: 2/3;
+    margin-left: 20px;
+    align-self: stretch;
     background-image: url(../../../images/UI/btn-like-heart.svg);
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 20.76px;
-    width: 18.13px;
+    width: 20px;
+    /* height:18px; */
     border: none;
     background-color: white;
-    width: 9%;
+}
+
+.cards__btn-like:focus {
+    outline: none;
 }

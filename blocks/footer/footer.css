@@ -6,3 +6,8 @@
     padding: 60px 24px;
 }
 
+@media screen and (max-width: 420px) {
+    .footer {
+        padding-top: 10px;
+    }
+}

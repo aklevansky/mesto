@@ -5,37 +5,46 @@ let profileEditForm = document.forms['profileEdit'];
 let profileName = document.querySelector('.profile__name');
 let profileJob = document.querySelector('.profile__job');
 
-function popupOpen() {
-    // in case .popup doesn't exist
-    if (!popup) {
-        return;
-    }
+let profileNameInput = document.querySelector('.popup__input_type_name');
+let profileJobInput = document.querySelector('.popup__input_type_job');
 
+function popupOpen() {
     popup.classList.add('popup_opened');
 
     // Setting initial text value in the input forms
-    profileEditForm.elements.name.value = profileName.textContent.trim();
-    profileEditForm.elements.job.value = profileJob.textContent.trim();
+
+    profileNameInput.value = profileName.textContent.trim();
+    profileJobInput.value = profileJob.textContent.trim();
+
 }
 
 function popupClose() {
-    // in case popup doesn't exist
-    if (!popup) {
-        return;
-    }
-
     popup.classList.remove('popup_opened');
 }
 
 function formSubmitHandler (evt) {
     evt.preventDefault();
 
+    /*
+    Старый код:
     let nameInput = profileEditForm.elements.name.value;
     let jobInput = profileEditForm.elements.job.value;
 
-    // Updating profile name and job if not empty 
-    profileName.textContent =  nameInput ? nameInput : profileName.textContent;
-    profileJob.textContent =  jobInput ? jobInput : profileJob.textContent;
+    Я не совсем понимаю, какие еще элементы DOM нужно вынести в переменную заранее.
+    В правой части присваивания мы напрямую обращаемся свойствам объекта формы, который уже давно найден и сохранен
+    в переменную profileEditForm (стр. 4).
+    Переменные в левой части взяты напрямую из того кода, который предлагалось использовать в условии задания.
+    
+    В попытке это исправить я ввел еще две глобальные переменные profileNameInput и profileJobInput, но не совсем
+    понимаю, зачем они нужны (вместо того, чтобы один раз найти форму и обращаться к свойствам ее объекта мы, получается,
+    ищем отдельно каждый ее дочерний элемент).
+    */
+
+    let nameInput = profileNameInput.value;
+    let jobInput = profileJobInput.value;
+ 
+    profileName.textContent =  nameInput;
+    profileJob.textContent =  jobInput;
     popupClose();
 }
 
