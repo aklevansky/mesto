@@ -1,7 +1,7 @@
 .profile__btn-add{
     grid-area: add;
     background: none;
-    background-image: url(../../../images/UI/btn-add-plus.svg);
+    background-image: url(../../../images/ui/btn-add-plus.svg);
     background-repeat: no-repeat;
     background-position: center;
     border: 2px solid white;
