@@ -5,17 +5,23 @@
 
 .cards {
     width: 100%;
-    margin: 0 auto;
     padding: 45px 0;
     padding-bottom: 6px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 18px;
     row-gap: 21px;
     list-style: none;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
+    .cards  {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 420px) {
     .cards  {
         grid-template-columns: 1fr;
     }
